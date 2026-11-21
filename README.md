@@ -10,7 +10,7 @@
 > - It has **no** unit tests, no CI, and no guarantees.
 > - **Check the output yourself** before using it for anything that matters.
 >
-> Use at your own risk. Issues and fixes are welcome (at least until I lose access to Claude), but don't expect support.
+> Use at your own risk. Issues (at least until I lose access to Claude) and fixes are welcome, but don't expect support.
 
 ---
 
