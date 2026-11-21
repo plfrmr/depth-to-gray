@@ -79,3 +79,7 @@ python depth_to_gray.py depth.png --invert         # near = black, far = white
 - **Colormap mode** rebuilds the palette's 256 colors with OpenCV and maps each pixel to the index of the closest one.
 
 The output is **relative** depth: it is stretched to fill the range, so the gray values are not meters.
+
+## License
+
+MIT, see [LICENSE](LICENSE). Provided as is, with no warranty. See the warning at the top.
