@@ -23,6 +23,18 @@ A small Python script that turns a "weird colored" 24-bit depth map into a norma
 
 *Top: depth packed into the R/G/B bytes. Bottom: depth painted with the turbo colormap. Both inputs are synthetic.*
 
+## Why this exists
+
+I needed this to convert depth maps exported from **[Mine-imator](https://www.mineimator.com/)**, the Minecraft animation program. Its depth render comes out as a colored 24-bit image instead of a normal black and white one. I wanted a regular grayscale depth map I could use in other tools, such as compositing, depth of field, or AI image tools.
+
+For a Mine-imator depth render, just run:
+
+```bash
+python depth_to_gray.py my_render_depth.png
+```
+
+If the result looks scrambled, try `--order rgb` or `--order bgr`. If near and far are the wrong way round, add `--invert`. The script should work on other colored depth maps too (see below).
+
 ## What kinds of colored depth maps?
 
 1. **Packed 24-bit depth (default, `--mode packed`)**
